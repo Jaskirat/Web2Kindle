@@ -1,0 +1,19 @@
+Web To Kindle
+-------------
+
+A crude hack to scrape html pages off the web and email it to the kindle (or just about any email address) as an attachment.
+
+Google App Engine:
+
+1. Listens to HTTP GET requests 
+2. Does a URL fetch of the given url 
+3. Sends the page as an attachment to the given email address
+4. Sender will be the gmail id of the user who sent the get request , may redirect to a google login page if required
+
+JS Bookmarklet:
+
+1. To grab the current URL , prompt for email address 
+2. Send HTTP GET request to the app engine instance.
+
+NOTE:
+This was a couple hours hack, could definitely do *much* better. Mail suggestions to me AT jaskirat DOT info
